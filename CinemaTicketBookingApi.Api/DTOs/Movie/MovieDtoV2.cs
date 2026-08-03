@@ -1,11 +1,11 @@
-namespace CinemaTicketBookingApi.Api.Models;
-public class Movie
+namespace CinemaTicketBookingApi.Api.Dtos;
+
+public class MovieDtoV2
 {
       public int Id {get; set;}
       public string Name {get; set;} = string.Empty;
       public string Genre {get; set;} = string.Empty;
-      public DateTime ReleaseDate {get;set;}
+      public DateTime ReleaseDate {get; set;}
       public bool AvailableInCinema {get; set;}
-      
-      public ICollection<Show> Shows {get; set;} = new List<Show>();
+
 }
